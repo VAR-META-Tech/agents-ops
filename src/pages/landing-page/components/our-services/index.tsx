@@ -9,7 +9,7 @@ export const OurServices = () => {
     <div className="py-14 px-6 bg-[url(assets/images/ellipse-linear.png)] bg-no-repeat bg-cover bg-[position:-300px_-450px]">
       <div className="max-w-[1280px] mx-auto">
         <div className="flex items-center justify-between">
-          <CommonTitle className="pl-6 max-[930px]:text-3xl">
+          <CommonTitle className="pl-6 max-[930px]:text-3xl max-[676px]:pl-3">
             Our Services
           </CommonTitle>
         </div>

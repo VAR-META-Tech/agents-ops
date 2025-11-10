@@ -47,7 +47,7 @@ export const OurProcess = () => {
   return (
     <div className="bg-white">
       <div className="max-w-[1280px] mx-auto py-10 max-[1400px]:mx-6">
-        <div className="mb-10 pl-6 flex items-center justify-between max-[615px]:min-w-[320px]">
+        <div className="mb-10 pl-6 flex items-center justify-between max-[676px]:pl-3 max-[615px]:min-w-[320px]">
           <CommonTitle className="max-[930px]:text-3xl">
             Our Process
           </CommonTitle>
@@ -57,7 +57,7 @@ export const OurProcess = () => {
               onClick={handlePrevious}
               variant="outline"
               size="icon"
-              className="w-14 h-14 rounded-full border-[#7C89AE] hover:border-[#7C89AE]"
+              className="w-14 h-14 rounded-full border-[#7C89AE] hover:border-[#7C89AE] max-[676px]:w-10 max-[676px]:h-10"
               disabled={!canScrollPrev}
             >
               <ArrowLeft className="!w-6 !h-6" />
@@ -66,7 +66,7 @@ export const OurProcess = () => {
               onClick={handleNext}
               variant="outline"
               size="icon"
-              className="w-14 h-14 rounded-full border-[#7C89AE] hover:border-[#7C89AE]"
+              className="w-14 h-14 rounded-full border-[#7C89AE] hover:border-[#7C89AE] max-[676px]:w-10 max-[676px]:h-10"
               disabled={!canScrollNext}
             >
               <ArrowRight className="!w-6 !h-6" />

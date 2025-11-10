@@ -9,7 +9,7 @@ export const HowItWork = () => {
   return (
     <div className="bg-white">
       <div className="max-w-[1280px] mx-auto py-20 max-[1400px]:mx-6">
-        <div className="mb-10 pl-6">
+        <div className="mb-10 pl-6 max-[676px]:pl-3">
           <CommonTitle className="max-[930px]:text-3xl">
             How it work
           </CommonTitle>

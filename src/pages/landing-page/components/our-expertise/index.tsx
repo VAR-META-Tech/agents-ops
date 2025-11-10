@@ -13,7 +13,7 @@ export const OurExpertise = () => {
     <div>
       <div className="max-w-[1280px] mx-auto py-14">
         <div className="flex items-center justify-between px-6">
-          <div className="pl-6">
+          <div className="pl-6 max-[676px]:pl-3">
             <CommonTitle className="max-[930px]:text-3xl">
               Our Expertise
             </CommonTitle>
