@@ -37,6 +37,13 @@ export const OurProcess = () => {
     setCanScrollPrev(api?.canScrollPrev() || true);
   };
 
+  React.useEffect(() => {
+    api?.on("scroll", () => {
+      setCanScrollPrev(api?.canScrollPrev());
+      setCanScrollNext(api?.canScrollNext());
+    });
+  }, [api]);
+
   return (
     <div className="bg-white">
       <div className="max-w-[1280px] mx-auto py-10 max-[1400px]:mx-6">
