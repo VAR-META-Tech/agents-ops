@@ -19,20 +19,34 @@ export const Testimonials = () => {
 
   React.useEffect(() => {
     api?.on("scroll", () => {
-      setCurrentIndex(api?.slidesInView()[0] || 0);
+      setCurrentIndex(api.selectedScrollSnap() || 0);
     });
+  }, [api]);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const autoplay = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => {
+      clearInterval(autoplay);
+    };
   }, [api]);
 
   return (
     <div
       className={cn(
         "bg-white min-h-[580px] min-w-[380px] pt-[100px] pb-4 ",
-        " bg-[url(assets/images/dotted-art-bg.png)] bg-no-repeat bg-[position:50%_14%] bg-[length:1400px_900px]"
+        "bg-[url(assets/images/dotted-art-bg.png)] bg-no-repeat bg-[position:50%_14%] bg-[length:1400px_900px]"
       )}
     >
       <Carousel
         className="w-full max-w-[1280px] mx-auto"
-        opts={{}}
+        opts={{ loop: true, active: true }}
         setApi={setApi}
       >
         <CarouselContent className="w-full mb-6 px-2">
