@@ -40,7 +40,7 @@ export const Testimonials = () => {
   return (
     <div
       className={cn(
-        "bg-white min-h-[580px] min-w-[380px] pt-[100px] pb-4 ",
+        "bg-white min-h-[480px] min-w-[380px] pt-[100px] pb-4",
         "bg-[url(assets/images/dotted-art-bg.png)] bg-no-repeat bg-[position:50%_14%] bg-[length:1400px_900px]"
       )}
     >
