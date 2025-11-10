@@ -1,0 +1,49 @@
+import { CommonTitle } from "@/components/common/common-title";
+import { TEAM_MEMBERS } from "./utils/constants";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import CommonAnimationContainer from "@/components/common/common-animation-container";
+import { cn } from "@/lib/utils";
+
+export const OurTeam = () => {
+  return (
+    <div className="bg-white">
+      <div className="max-w-[1280px] mx-auto py-20 max-[1400px]:mx-6">
+        <div className="mb-10 pl-6">
+          <CommonTitle className="max-[930px]:text-3xl">Our Team</CommonTitle>
+        </div>
+
+        <div
+          className={cn(
+            "grid grid-cols-[repeat(auto-fit,_minmax(380px,_1fr))] min-w-[380px] gap-6 text-[#1E1E1E] p-8 bg-[#E6E6E6]",
+            "bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat rounded-[40px] border border-[#E6E6E6]",
+            "max-[540px]:!grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]"
+          )}
+        >
+          {TEAM_MEMBERS.map((member, index) => (
+            <CommonAnimationContainer
+              key={index}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="h-full"
+            >
+              <Card key={member.id} className="rounded-4xl min-h-[500px] max-[615px]:min-h-[400px]">
+                <CardHeader>{member.image}</CardHeader>
+                <CardContent>
+                  <CardTitle className="text-2xl font-semibold">
+                    {member.name}
+                  </CardTitle>
+                  <div className="text-xl font-normal my-1">{member.title}</div>
+                  <div className="text-base font-normal leading-[26px] text-[#1E1E1EDB]">
+                    {member.degree}
+                  </div>
+                  <div className="text-xl font-normal leading-8 mt-5">
+                    {member.bio}
+                  </div>
+                </CardContent>
+              </Card>
+            </CommonAnimationContainer>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
