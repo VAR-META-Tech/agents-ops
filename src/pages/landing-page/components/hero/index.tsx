@@ -20,14 +20,14 @@ export const Hero = () => {
         />
         <div>
           <div className="relative z-10 min-w-[320px] max-[640px]:px-3">
-            <CommonTitle className="flex items-center justify-center gap-2 max-[930px]:flex-col max-[930px]:text-3xl">
+            <h1 className="text-5xl font-semibold flex items-center justify-center gap-2 max-[930px]:flex-col max-[930px]:text-3xl">
               Unlock the Power of
               <img
                 className="pt-3 max-[930px]:w-[156px] max-[930px]:mb-2"
                 src={aiAgentsPlusIcon}
                 alt="AI Agents Plus"
               />
-            </CommonTitle>
+            </h1>
             <CommonTitle className="text-center mt-2 max-[930px]:text-3xl">
               Transform Your Business Today
             </CommonTitle>
