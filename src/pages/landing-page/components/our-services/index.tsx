@@ -16,7 +16,7 @@ export const OurServices = () => {
           </CommonTitle>
 
           <CommonButton
-            className="min-w-48 px-4 h-11 text-base font-medium leading-6 max-[930px]:text-sm max-[930px]:h-9 max-[930px]:min-w-44 max-[510px]:min-w-9"
+            className="min-w-48 pr-3 pl-4 h-11 text-base font-medium leading-6 max-[930px]:text-sm max-[930px]:h-9 max-[930px]:min-w-44 max-[510px]:min-w-9 max-[510px]:p-2"
             variant="outline"
           >
             <span className="max-[510px]:hidden">Explore all services</span>
@@ -28,14 +28,14 @@ export const OurServices = () => {
           </CommonButton>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(625px,_1fr))] gap-7 mt-10 max-[930px]:grid-cols-[repeat(auto-fit,_minmax(380px,_1fr))]">
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(625px,_1fr))] gap-7 mt-10 max-[676px]:grid-cols-[repeat(auto-fit,_minmax(380px,_1fr))]">
           {SERVICES.map((service, index) => (
             <CommonAnimationContainer
               key={service.no}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="h-full"
             >
-              <Card className="rounded-4xl h-full">
+              <Card className="rounded-[44px] h-full pb-8 px-2">
                 <CardHeader className="flex items-center justify-between gap-4">
                   <CommonChip>{service.no}</CommonChip>
                   <div>{service.icon}</div>

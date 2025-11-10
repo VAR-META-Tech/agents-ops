@@ -14,8 +14,8 @@ export const Hero = () => {
       <div className="pt-20 min-w-[380px] relative">
         <div
           className={cn(
-            "bg-[url(assets/images/circle-frame-white.png)] bg-no-repeat bg-[size:1000px_1000px]",
-            "h-[1000px] w-[1000px] top-[50%] left-[50%] translate-x-[calc(-50%)] translate-y-[calc(-50%+430px)] absolute animate-spin-slow"
+            "bg-[url(assets/images/circle-frame-white-v2.png)] bg-no-repeat bg-[size:1150px_1150px]",
+            "h-[1150px] w-[1150px] top-[50%] left-[50%] translate-x-[calc(-50%)] translate-y-[calc(-50%+500px)] absolute animate-spin-slow"
           )}
         />
         <div>
@@ -37,7 +37,7 @@ export const Hero = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4 mt-10 relative z-10">
-            <CommonButton className="min-w-32 h-11 text-sm px-3 border-none">
+            <CommonButton className="min-w-32 h-11 text-sm pr-3 pl-4 gap-1 border-none">
               <span>Contact us</span>
               <img
                 className="w-5 h-5"
@@ -46,7 +46,7 @@ export const Hero = () => {
               />
             </CommonButton>
             <CommonButton
-              className="min-w-32 h-11 text-sm px-3"
+              className="min-w-32 h-11 text-sm pr-3 pl-4 gap-1"
               variant="outline"
             >
               <span>Learn more</span>

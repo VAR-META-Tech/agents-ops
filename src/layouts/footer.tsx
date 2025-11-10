@@ -18,11 +18,9 @@ export const Footer = () => {
             )}
           >
             <div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mb-2">
                 <img src={locationIcon} alt="Location" />
-                <span className="font-semibold text-xl mb-2">
-                  Hanoi Head Office
-                </span>
+                <span className="font-semibold text-xl">Hanoi Head Office</span>
               </div>
               <div className="text-base font-normal leading-[26px] text-[#7C89AE]">
                 16th floor, HL Tower 82 Duy
@@ -33,9 +31,9 @@ export const Footer = () => {
             </div>
 
             <div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mb-2">
                 <img src={locationIcon} alt="Location" />
-                <span className="font-semibold text-xl mb-2">Da Nang</span>
+                <span className="font-semibold text-xl">Da Nang</span>
               </div>
               <div className="text-base font-normal leading-[26px] text-[#7C89AE]">
                 68 Xo Viet Nghe Tinh,
@@ -46,9 +44,9 @@ export const Footer = () => {
             </div>
 
             <div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 mb-2">
                 <img src={phoneIcon} alt="Location" />
-                <span className="font-semibold text-xl mb-2">Contact</span>
+                <span className="font-semibold text-xl">Contact</span>
               </div>
               <div className="text-base font-normal leading-[26px] text-[#7C89AE]">
                 +84 96 450 83 84

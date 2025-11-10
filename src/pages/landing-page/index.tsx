@@ -14,12 +14,20 @@ const LandingPage = () => {
   return (
     <div className="bg-[#F9F9F9]">
       <Hero />
-      <OurServices />
-      <OurExpertise />
+      <div id="services">
+        <OurServices />
+      </div>
+      <div id="expertise">
+        <OurExpertise />
+      </div>
       <WhatMakesUsStandout />
-      <HowItWork />
+      <div id="how-it-work">
+        <HowItWork />
+      </div>
       <OurProcess />
-      <OurTeam />
+      <div id="our-team">
+        <OurTeam />
+      </div>
       <Testimonials />
       <TechStack />
       <AgentsOpsLinear />

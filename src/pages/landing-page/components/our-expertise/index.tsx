@@ -25,7 +25,7 @@ export const OurExpertise = () => {
           </div>
 
           <CommonButton
-            className="min-w-48 px-4 h-11 text-base font-medium leading-6 max-[930px]:text-sm max-[930px]:h-9 max-[930px]:min-w-44 max-[510px]:min-w-9"
+            className="min-w-40 pr-3 pl-4 h-11 text-base font-medium leading-6 max-[930px]:text-sm max-[930px]:h-9 max-[930px]:min-w-36 max-[510px]:min-w-9 max-[510px]:p-2"
             variant="outline"
             value={activeTab}
           >
@@ -38,7 +38,7 @@ export const OurExpertise = () => {
           </CommonButton>
         </div>
 
-        <div className="bg-white rounded-3xl border border-[#E6E6E6] mt-10 max-[1400px]:mx-6 max-[1100px]:hidden">
+        <div className="bg-white rounded-[48px] border border-[#E6E6E6] mt-10 max-[1400px]:mx-6 max-[1100px]:hidden">
           <Tabs
             className="flex-row justify-between bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat"
             value={activeTab}
@@ -76,7 +76,7 @@ export const OurExpertise = () => {
                 <TabsContent
                   key={tab.value}
                   value={tab.value}
-                  className="max-w-[576px] bg-white border border-[#E6E6E6] rounded-3xl h-full p-8 max-[1400px]:max-w-[400px]"
+                  className="max-w-[576px] bg-white border border-[#E6E6E6] rounded-3xl h-full p-8"
                 >
                   <motion.div
                     key={tab.value}

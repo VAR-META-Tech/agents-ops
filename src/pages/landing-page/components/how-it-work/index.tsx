@@ -17,7 +17,7 @@ export const HowItWork = () => {
 
         <div
           className={cn(
-            "gap-6 border border-[#E6E6E6] rounded-3xl p-6 bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat",
+            "gap-6 border border-[#E6E6E6] rounded-[48px] p-8 bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat",
             "grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] min-w-[380px]"
           )}
         >
@@ -27,7 +27,7 @@ export const HowItWork = () => {
               transition={{ duration: 0.4, delay: index * 0.2 }}
               className="h-full"
             >
-              <Card className="gap-2">
+              <Card className="gap-2 rounded-4xl">
                 <CardHeader>{item.image}</CardHeader>
                 <CardContent>
                   <CardTitle>

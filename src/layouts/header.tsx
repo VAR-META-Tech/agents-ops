@@ -11,31 +11,72 @@ import {
 import { MenuIcon } from "lucide-react";
 
 export const Header = () => {
+  const handleScroll = (targetId: string) => {
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const elementTop =
+        targetElement.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: elementTop - 92,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="flex justify-between items-center max-w-[1280px] h-[92px] mx-auto max-[1330px]:px-6 ">
       <div>
-        <img src={agentOpsLogo} className="min-w-[125px] h-[24px]" alt="AgentOps" />
+        <img
+          src={agentOpsLogo}
+          className="min-w-[125px] h-[24px]"
+          alt="AgentOps"
+        />
       </div>
 
       <div className="flex items-center justify-end gap-4 w-full max-[1330px]:justify-between max-[1330px]:ml-12 max-[930px]:justify-end">
         <ul className="flex items-center gap-5 font-medium text-base max-[930px]:hidden">
           <li>
-            <a href="/">Services</a>
+            <span
+              onClick={() => handleScroll("services")}
+              className="cursor-pointer"
+            >
+              Services
+            </span>
           </li>
           <li>
-            <a href="/">Expertise</a>
+            <span
+              onClick={() => handleScroll("expertise")}
+              className="cursor-pointer"
+            >
+              Expertise
+            </span>
           </li>
           <li>
-            <a href="/">Our Team</a>
+            <span
+              onClick={() => handleScroll("our-team")}
+              className="cursor-pointer"
+            >
+              Our Team
+            </span>
           </li>
           <li>
-            <a href="/">How it works</a>
+            <span
+              onClick={() => handleScroll("how-it-work")}
+              className="cursor-pointer"
+            >
+              How it works
+            </span>
           </li>
         </ul>
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild className="">
-            <CommonButton className="rounded-lg w-9 h-9 !p-2 !flex !items-center !justify-center !hidden max-[930px]:!block" variant="outline">
+            <CommonButton
+              className="rounded-lg w-9 h-9 !p-2 !flex !items-center !justify-center !hidden max-[930px]:!block"
+              variant="outline"
+            >
               <MenuIcon />
             </CommonButton>
           </DropdownMenuTrigger>
@@ -45,26 +86,28 @@ export const Header = () => {
           >
             <DropdownMenuGroup>
               <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <a href="/">Services</a>
+                <span onClick={() => handleScroll("services")}>Services</span>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <a href="/">Expertise</a>
+                <span onClick={() => handleScroll("expertise")}>Expertise</span>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <a href="/">Our Team</a>
+                <span onClick={() => handleScroll("our-team")}>Our Team</span>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <a href="/">How it works</a>
+                <span onClick={() => handleScroll("how-it-work")}>
+                  How it works
+                </span>
               </DropdownMenuItem>
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
 
         <CommonButton
-          className="ml-5 min-w-32 h-11 text-sm px-3 max-[930px]:ml-0 max-[930px]:h-9"
+          className="ml-5 min-w-32 h-11 text-sm pr-3 pl-4 gap-1 max-[930px]:ml-0 max-[930px]:h-9"
           variant="outline"
         >
-          <span className="pt-1">Contact us</span>
+          <span>Contact us</span>
           <img
             className="w-5 h-5"
             src={arrowUpRightIcon}

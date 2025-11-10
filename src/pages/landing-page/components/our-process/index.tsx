@@ -69,8 +69,8 @@ export const OurProcess = () => {
 
         <div
           className={cn(
-            "p-6 pr-0 bg-[url(assets/images/net-background.png)] bg-[#E6E6E6] bg-cover bg-no-repeat",
-            "border border-[#E6E6E6] rounded-4xl min-w-[380px]"
+            "p-8 pr-0 bg-[url(assets/images/net-background.png)] bg-[#E6E6E6] bg-cover bg-no-repeat",
+            "border border-[#E6E6E6] rounded-[48px] min-w-[380px]"
           )}
         >
           <Carousel
