@@ -2,7 +2,34 @@
 import agentsOpsLogoWhite from "@/assets/images/agents-ops-logo-white.png";
 import locationIcon from "@/assets/svg/location-icon.svg";
 import phoneIcon from "@/assets/svg/phone-icon.svg";
-import { cn } from "@/lib/utils";
+import { cn, handleScroll } from "@/lib/utils";
+
+export const FOOTER_LINKS = [
+  {
+    label: "Services",
+    elId: "services",
+  },
+  {
+    label: "Expertise",
+    elId: "expertise",
+  },
+  {
+    label: "Our Strength",
+    elId: "our-strength",
+  },
+  {
+    label: "How it works",
+    elId: "how-it-work",
+  },
+  {
+    label: "Our Process",
+    elId: "our-process",
+  },
+  {
+    label: "Our Team",
+    elId: "our-team",
+  },
+];
 
 export const Footer = () => {
   return (
@@ -60,18 +87,19 @@ export const Footer = () => {
             Ready to start your build?
           </div>
 
-          <div className="text-4xl font-semibold leading-12 mb-14">
+          <div className="text-4xl font-semibold leading-12 mb-10">
             Contact@var-meta.com
           </div>
 
           <ul className="text-base leading-[26px] font-normal flex flex-col gap-3">
-            <li>Services</li>
-            <li>Expertise</li>
-            <li>Our Team</li>
-            <li>How it works</li>
+            {FOOTER_LINKS.map((link) => (
+              <li key={link.label} onClick={() => handleScroll(link.elId)} className="cursor-pointer">
+                {link.label}
+              </li>
+            ))}
           </ul>
 
-          <div className="flex items-center justify-between text-base leading-[26px] font-normal mt-[70px] max-[700px]:flex-col max-[700px]:items-start gap-2">
+          <div className="flex items-center justify-between text-base leading-[26px] font-normal mt-[50px] max-[700px]:flex-col max-[700px]:items-start gap-2">
             <div>©2025 Var-meta All Rights Serviced</div>
 
             <div className="flex gap-4">
