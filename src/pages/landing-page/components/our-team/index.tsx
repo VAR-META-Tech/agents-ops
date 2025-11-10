@@ -14,9 +14,9 @@ export const OurTeam = () => {
 
         <div
           className={cn(
-            "grid grid-cols-[repeat(auto-fit,_minmax(380px,_1fr))] min-w-[380px] gap-6 text-[#1E1E1E] p-8 bg-[#E6E6E6]",
+            "grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] min-w-[320px] gap-6 text-[#1E1E1E] p-8 bg-[#E6E6E6]",
             "bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat rounded-[48px] border border-[#E6E6E6]",
-            "max-[540px]:!grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]"
+            "max-[540px]:!grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]"
           )}
         >
           {TEAM_MEMBERS.map((member, index) => (

@@ -20,11 +20,15 @@ const LandingPage = () => {
       <div id="expertise">
         <OurExpertise />
       </div>
-      <WhatMakesUsStandout />
+      <div id="our-strength">
+        <WhatMakesUsStandout />
+      </div>
       <div id="how-it-work">
         <HowItWork />
       </div>
-      <OurProcess />
+      <div id="our-process">
+        <OurProcess />
+      </div>
       <div id="our-team">
         <OurTeam />
       </div>

@@ -13,9 +13,6 @@ export const WhatMakesUsStandout = () => {
     >
       <div className="max-w-[1280px] mx-auto px-16 py-28 text-white">
         <div className="mb-16 py-6">
-          <div className="mb-3 max-[930px]:text-base max-[930px]:mb-0">
-            [ Our Strength ]
-          </div>
           <CommonTitle className="max-[930px]:text-3xl">
             What Makes Us Standout
           </CommonTitle>

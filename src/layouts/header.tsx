@@ -9,22 +9,36 @@ import {
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
 import { MenuIcon } from "lucide-react";
+import { handleScroll } from "@/lib/utils";
+
+export const NAV_LINKS = [
+  {
+    label: "Services",
+    elId: "services",
+  },
+  {
+    label: "Expertise",
+    elId: "expertise",
+  },
+  {
+    label: "Our Strength",
+    elId: "our-strength",
+  },
+  {
+    label: "How it works",
+    elId: "how-it-work",
+  },
+  {
+    label: "Our Process",
+    elId: "our-process",
+  },
+  {
+    label: "Our Team",
+    elId: "our-team",
+  },
+];
 
 export const Header = () => {
-  const handleScroll = (targetId: string) => {
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const elementTop =
-        targetElement.getBoundingClientRect().top + window.scrollY;
-
-      window.scrollTo({
-        top: elementTop - 92,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <div className="flex justify-between items-center max-w-[1280px] h-[92px] mx-auto max-[1330px]:px-6 ">
       <div>
@@ -35,46 +49,24 @@ export const Header = () => {
         />
       </div>
 
-      <div className="flex items-center justify-end gap-4 w-full max-[1330px]:justify-between max-[1330px]:ml-12 max-[930px]:justify-end">
-        <ul className="flex items-center gap-5 font-medium text-base max-[930px]:hidden">
-          <li>
-            <span
-              onClick={() => handleScroll("services")}
-              className="cursor-pointer"
-            >
-              Services
-            </span>
-          </li>
-          <li>
-            <span
-              onClick={() => handleScroll("expertise")}
-              className="cursor-pointer"
-            >
-              Expertise
-            </span>
-          </li>
-          <li>
-            <span
-              onClick={() => handleScroll("our-team")}
-              className="cursor-pointer"
-            >
-              Our Team
-            </span>
-          </li>
-          <li>
-            <span
-              onClick={() => handleScroll("how-it-work")}
-              className="cursor-pointer"
-            >
-              How it works
-            </span>
-          </li>
+      <div className="flex items-center justify-end gap-4 w-full max-[1330px]:justify-between max-[1330px]:ml-12 max-[1100px]:justify-end">
+        <ul className="flex items-center gap-5 font-medium text-base max-[1100px]:hidden">
+          {NAV_LINKS.map((link) => (
+            <li key={link.label}>
+              <span
+                onClick={() => handleScroll(link.elId)}
+                className="cursor-pointer"
+              >
+                {link.label}
+              </span>
+            </li>
+          ))}
         </ul>
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild className="">
             <CommonButton
-              className="rounded-lg w-9 h-9 !p-2 !flex !items-center !justify-center !hidden max-[930px]:!block"
+              className="rounded-lg w-9 h-9 !p-2 !flex !items-center !justify-center !hidden max-[1100px]:!block"
               variant="outline"
             >
               <MenuIcon />
@@ -85,20 +77,16 @@ export const Header = () => {
             align="start"
           >
             <DropdownMenuGroup>
-              <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <span onClick={() => handleScroll("services")}>Services</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <span onClick={() => handleScroll("expertise")}>Expertise</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <span onClick={() => handleScroll("our-team")}>Our Team</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="cursor-pointer p-1 text-base hover:bg-[#dadada]">
-                <span onClick={() => handleScroll("how-it-work")}>
-                  How it works
-                </span>
-              </DropdownMenuItem>
+              {NAV_LINKS.map((link) => (
+                <DropdownMenuItem
+                  key={link.label}
+                  className="cursor-pointer p-1 text-base hover:bg-[#dadada]"
+                >
+                  <span onClick={() => handleScroll(link.elId)}>
+                    {link.label}
+                  </span>
+                </DropdownMenuItem>
+              ))}
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>

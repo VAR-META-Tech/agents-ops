@@ -40,7 +40,7 @@ export const OurProcess = () => {
   return (
     <div className="bg-white">
       <div className="max-w-[1280px] mx-auto py-10 max-[1400px]:mx-6">
-        <div className="mb-10 pl-6 flex items-center justify-between max-[615px]:min-w-[380px]">
+        <div className="mb-10 pl-6 flex items-center justify-between max-[615px]:min-w-[320px]">
           <CommonTitle className="max-[930px]:text-3xl">
             Our Process
           </CommonTitle>
@@ -70,7 +70,7 @@ export const OurProcess = () => {
         <div
           className={cn(
             "p-8 pr-0 bg-[url(assets/images/net-background.png)] bg-[#E6E6E6] bg-cover bg-no-repeat",
-            "border border-[#E6E6E6] rounded-[48px] min-w-[380px]"
+            "border border-[#E6E6E6] rounded-[48px] min-w-[320px] max-[450px]:p-4"
           )}
         >
           <Carousel
@@ -84,7 +84,7 @@ export const OurProcess = () => {
               {WORKFLOW_STEPS.map((step, index) => (
                 <CarouselItem
                   key={index}
-                  className="max-w-[515px] max-[615px]:max-w-[350px]"
+                  className="max-w-[515px] max-[615px]:max-w-[350px] max-[450px]:max-w-[300px]"
                 >
                   <CommonAnimationContainer
                     key={index}
@@ -92,9 +92,9 @@ export const OurProcess = () => {
                     className="h-full"
                   >
                     <div className="p-1">
-                      <Card className="h-[530px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-[615px]:w-[330px]">
+                      <Card className="h-[530px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-[615px]:w-[330px] max-[615px]:h-[550px] max-[450px]:w-[284px] max-[450px]:h-[650px]">
                         <CardHeader className="flex items-start gap-4">
-                          <CommonChip className="w-[68px] h-[68px] bg-transparent text-white">
+                          <CommonChip className="w-[68px] h-[68px] bg-transparent text-white max-[450px]:min-w-10 max-[450px]:w-10 max-[450px]:min-h-10 max-[450px]:!h-10">
                             {step.id}
                           </CommonChip>
                           <div className="h-16 flex flex-col justify-between">
@@ -111,7 +111,7 @@ export const OurProcess = () => {
                           <span className="text-xl font-normal leading-8">
                             {step.description}
                           </span>
-                          <span className="absolute bottom-8 right-8">
+                          <span className="absolute bottom-8 right-8 max-[615px]:hidden">
                             {step.icon}
                           </span>
                         </CardContent>

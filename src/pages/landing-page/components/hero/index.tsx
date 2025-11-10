@@ -3,15 +3,15 @@ import { CommonButton } from "@/components/common/common-button";
 import arrowDownIcon from "@/assets/svg/arrow-down.svg";
 import arrowTopRightWhiteIcon from "@/assets/svg/arrow-top-right-white.svg";
 import { CommonTitle } from "@/components/common/common-title";
-import { cn } from "@/lib/utils";
+import { cn, handleScroll } from "@/lib/utils";
 import Lottie from "lottie-react";
 import heroEffects from "@/assets/lotties/hero-effects.json";
 
 export const Hero = () => {
   return (
-    // <div className="pt-20 min-w-[380px] relative bg-[url(assets/images/linear.png),_url(assets/images/circle-frame-gray.png)] bg-no-repeat bg-[length:100%_100%,1200px_1200px] bg-[position:center,50%_2%]">
+    // <div className="pt-20 min-w-[320px] relative bg-[url(assets/images/linear.png),_url(assets/images/circle-frame-gray.png)] bg-no-repeat bg-[length:100%_100%,1200px_1200px] bg-[position:center,50%_2%]">
     <div className=" bg-[url(assets/images/linear.png)] bg-no-repeat bg-cover overflow-hidden">
-      <div className="pt-20 min-w-[380px] relative">
+      <div className="pt-20 min-w-[320px] relative">
         <div
           className={cn(
             "bg-[url(assets/images/circle-frame-white-v2.png)] bg-no-repeat bg-[size:1150px_1150px]",
@@ -19,7 +19,7 @@ export const Hero = () => {
           )}
         />
         <div>
-          <div className="relative z-10 min-w-[380px] max-[640px]:px-3">
+          <div className="relative z-10 min-w-[320px] max-[640px]:px-3">
             <CommonTitle className="flex items-center justify-center gap-2 max-[930px]:flex-col max-[930px]:text-3xl">
               Unlock the Power of
               <img
@@ -48,6 +48,7 @@ export const Hero = () => {
             <CommonButton
               className="min-w-32 h-11 text-sm pr-3 pl-4 gap-1"
               variant="outline"
+              onClick={() => handleScroll("services")}
             >
               <span>Learn more</span>
               <img className="w-5 h-5" src={arrowDownIcon} alt="Arrow Down" />

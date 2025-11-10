@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export const Footer = () => {
   return (
     <div className="bg-[#001344] py-16 px-6 text-white">
-      <div className="max-w-[1280px] mx-auto min-w-[380px] flex justify-between max-[1140px]:flex-col">
+      <div className="max-w-[1280px] mx-auto min-w-[320px] flex justify-between max-[1140px]:flex-col">
         <div className="flex flex-col items-start justify-between">
           <img className="mb-12" src={agentsOpsLogoWhite} alt="AgentOps" />
 

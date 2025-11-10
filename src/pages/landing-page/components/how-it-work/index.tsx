@@ -18,7 +18,7 @@ export const HowItWork = () => {
         <div
           className={cn(
             "gap-6 border border-[#E6E6E6] rounded-[48px] p-8 bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat",
-            "grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] min-w-[380px]"
+            "grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] min-w-[320px]"
           )}
         >
           {HOW_IT_WORKS.map((item, index) => (

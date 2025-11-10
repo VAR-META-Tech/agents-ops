@@ -18,7 +18,7 @@ export const CommonButton = ({
   ...props
 }: ICommonButton) => {
   return (
-    <Button className={cn("border border-[#7C89AE] rounded-full h-10", className)} {...props}>
+    <Button className={cn("border border-[#7C89AE] rounded-full h-10 cursor-pointer", className)} {...props}>
       {children}
     </Button>
   );
