@@ -94,6 +94,7 @@ export const Header = () => {
         <CommonButton
           className="ml-5 min-w-32 h-11 text-sm pr-3 pl-4 gap-1 max-[930px]:ml-0 max-[930px]:h-9"
           variant="outline"
+          onClick={() => handleScroll("footer")}
         >
           <span>Contact us</span>
           <img

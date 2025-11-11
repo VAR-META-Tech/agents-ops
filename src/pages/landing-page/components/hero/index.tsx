@@ -37,7 +37,10 @@ export const Hero = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4 mt-10 relative z-10">
-            <CommonButton className="min-w-32 h-11 text-sm pr-3 pl-4 gap-1 border-none">
+            <CommonButton
+              className="min-w-32 h-11 text-sm pr-3 pl-4 gap-1 border-none"
+              onClick={() => handleScroll("footer")}
+            >
               <span>Contact us</span>
               <img
                 className="w-5 h-5"

@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const handleScroll = (targetId: string) => {
+export const handleScroll = (targetId: string, offset: number = 92) => {
   const targetElement = document.getElementById(targetId);
 
   if (targetElement) {
@@ -13,7 +13,7 @@ export const handleScroll = (targetId: string) => {
       targetElement.getBoundingClientRect().top + window.scrollY;
 
     window.scrollTo({
-      top: elementTop - 92,
+      top: elementTop - offset,
       behavior: "smooth",
     });
   }
