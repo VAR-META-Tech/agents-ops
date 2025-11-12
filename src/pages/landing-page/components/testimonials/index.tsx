@@ -59,7 +59,7 @@ export const Testimonials = () => {
                 <CommonAnimationContainer className="text-2xl font-semibold leading-8 text-center">
                   {testimonial.quote}
                 </CommonAnimationContainer>
-                <CommonAnimationContainer className="text-xl font-normal leading-8 text-center mt-5">
+                <CommonAnimationContainer className="text-lg font-normal leading-8 text-center mt-5">
                   <div>{testimonial.title}</div>
                   <div className="flex justify-center items-center mt-5">
                     {" "}

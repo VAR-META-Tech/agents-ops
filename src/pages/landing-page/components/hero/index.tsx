@@ -28,7 +28,7 @@ export const Hero = () => {
                 alt="AI Agents Plus"
               />
             </h1>
-            <CommonTitle className="text-center mt-2 max-[930px]:text-3xl">
+            <CommonTitle className="text-5xl text-center mt-2 max-[930px]:text-3xl">
               Transform Your Business Today
             </CommonTitle>
             <p className="text-2xl font-normal leading-9 text-center mt-6 max-[930px]:text-lg">
@@ -39,7 +39,7 @@ export const Hero = () => {
           <div className="flex items-center justify-center gap-4 mt-10 relative z-10">
             <CommonButton
               className="min-w-32 h-11 text-sm pr-3 pl-4 gap-1 border-none"
-              onClick={() => handleScroll("footer")}
+              onClick={() => handleScroll("contact")}
             >
               <span>Contact us</span>
               <img

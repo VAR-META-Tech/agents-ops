@@ -23,15 +23,19 @@ export const OurServices = () => {
             >
               <Card className="rounded-[44px] h-full pb-8 px-2">
                 <CardHeader className="flex items-center justify-between gap-4">
-                  <CommonChip>{service.no}</CommonChip>
-                  <div>{service.icon}</div>
+                  <CommonChip className="w-[68px] h-[68px] min-w-[68px] min-h-[68px]">
+                    {service.no}
+                  </CommonChip>
+                  <div className="w-[68px] h-[68px] min-w-[68px] min-h-[68px]">
+                    {service.icon}
+                  </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-semibold mb-4">
+                  <div className="text-xl font-semibold mb-4">
                     {service.title}
                   </div>
 
-                  <p className="text-xl font-normal leading-8">
+                  <p className="text-lg font-normal leading-8">
                     {service.description}
                   </p>
                 </CardContent>

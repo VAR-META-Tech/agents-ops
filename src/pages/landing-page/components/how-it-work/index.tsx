@@ -11,7 +11,7 @@ export const HowItWork = () => {
       <div className="max-w-[1280px] mx-auto py-20 max-[1400px]:mx-6">
         <div className="mb-10 pl-6 max-[676px]:pl-3">
           <CommonTitle className="max-[930px]:text-3xl">
-            How it work
+            How It Works
           </CommonTitle>
         </div>
 
@@ -32,7 +32,7 @@ export const HowItWork = () => {
                 <CardContent>
                   <CardTitle>
                     <div className="flex items-center gap-2">
-                      <CommonChip className="w-12 h-12 bg-white">
+                      <CommonChip className="w-12 h-12 min-w-12 min-h-12 bg-white">
                         <span>{item.id}</span>
                       </CommonChip>
                       <span className="text-2xl font-semibold">

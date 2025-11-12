@@ -7,25 +7,31 @@ export const SERVICES = [
   {
     no: 1,
     title: "AI Agent Strategy Consulting",
-    description: "From evaluating your current setup to identifying AI agent implementation opportunities, we provide tailored consulting for successful collaboration. Our AI agent consulting encompasses determining the ideal AI agent type for your needs, selecting the appropriate LLM, identifying the required prompt engineering technique, defining the necessary tech stack, assessing integration options, and more.",
+    description:
+      "We help enterprises design an AI agent roadmap that aligns with their business objectives. From assessing current systems to defining governance, selecting the optimal agent architecture and LLM foundation, we ensure your AI initiatives are scalable, secure, and strategically sound.",
     icon: <img src={questionBookIcon} alt="AI Agent Strategy Consulting" />,
   },
   {
     no: 2,
     title: "Custom AI Agent Development",
-    description: "Using cutting-edge platforms such as AutoGen Studio and crewAI, we develop personalized AI agents designed specifically for your business requirements. Whether you're looking for virtual assistance, automation of tasks, or support in decision-making, our team builds AI agents that are customized for your immediate needs while remaining adaptable to future shifts in your business environment.",
+    description:
+      "We build production-grade AI agents engineered for performance and adaptability. Leveraging advanced frameworks such as AutoGen Studio and crewAI, our solutions go beyond automation - enabling intelligent assistants, decision-support tools, and workflow optimizers that drive efficiency and innovation.",
     icon: <img src={terminalIcon} alt="Custom AI Agent Development" />,
   },
   {
     no: 3,
     title: "AI Agent Integration",
-    description: "Whether you prefer single-agent or multi-agent systems, we ensure your solution’s seamless integration into your workflows. Using advanced techniques in API architecture, microservices, and containerization, we streamline data flow, reduce latency, and foster smooth collaboration between AI agents and your current systems, establishing an efficient workflow.",
+    description:
+      "Our engineers integrate AI agents seamlessly into complex enterprise environments. Through secure API orchestration, microservices, and containerized infrastructure, we connect your AI systems and data pipelines into a unified, intelligent ecosystem.",
     icon: <img src={cursorClickIcon} alt="AI Agent Integration" />,
   },
   {
     no: 4,
     title: "Continuous Improvement and Maintenance",
-    description: "We focus on continuous improvement and maintenance, ensuring the AI agent continuously iterates and maintains the agent workflow. Our developers engage in regular model fine-tuning and performance monitoring to keep the AI solution at its peak efficiency. This approach guarantees that your business benefits from consistently optimized and up-to-date AI capabilities.",
-    icon: <img src={slidersIcon} alt="Continuous Improvement and Maintenance" />,
+    description:
+      "AI performance evolves over time - so do we. We keep your AI agents performing at their best through continuous monitoring, fine-tuning, and model optimization. Our proactive lifecycle management ensures your solutions stay reliable, compliant, and aligned with your strategic priorities.",
+    icon: (
+      <img src={slidersIcon} alt="Continuous Improvement and Maintenance" />
+    ),
   },
 ];

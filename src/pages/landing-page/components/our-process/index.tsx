@@ -44,6 +44,20 @@ export const OurProcess = () => {
     });
   }, [api]);
 
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const autoplay = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => {
+      clearInterval(autoplay);
+    };
+  }, [api]);
+
   return (
     <div className="bg-white">
       <div className="max-w-[1280px] mx-auto py-10 max-[1400px]:mx-6">
@@ -83,6 +97,8 @@ export const OurProcess = () => {
           <Carousel
             opts={{
               align: "start",
+              loop: true,
+              active: true,
             }}
             className="w-full"
             setApi={setApi}
@@ -101,11 +117,11 @@ export const OurProcess = () => {
                     <div className="p-1">
                       <Card className="h-[530px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-[615px]:w-[330px] max-[615px]:h-[550px] max-[450px]:w-[284px] max-[450px]:h-[650px]">
                         <CardHeader className="flex items-start gap-4">
-                          <CommonChip className="w-[68px] h-[68px] bg-transparent text-white max-[450px]:min-w-10 max-[450px]:w-10 max-[450px]:min-h-10 max-[450px]:!h-10">
+                          <CommonChip className="w-[68px] h-[68px] min-w-[68px] min-h-[68px] bg-transparent text-white max-[450px]:min-w-10 max-[450px]:w-10 max-[450px]:min-h-10 max-[450px]:h-10">
                             {step.id}
                           </CommonChip>
                           <div className="h-16 flex flex-col justify-between">
-                            <CardDescription className="text-xl font-normal text-white max-[615px]:text-lg">
+                            <CardDescription className="text-lg font-normal text-white max-[615px]:text-lg">
                               {step.subtitle}
                             </CardDescription>
                             <CardTitle className="text-4xl font-semibold leading-12 max-[615px]:text-3xl">
@@ -115,7 +131,7 @@ export const OurProcess = () => {
                         </CardHeader>
 
                         <CardContent className="flex pt-6">
-                          <span className="text-xl font-normal leading-8">
+                          <span className="text-lg font-normal leading-8">
                             {step.description}
                           </span>
                           <span className="absolute bottom-8 right-8 max-[615px]:hidden">

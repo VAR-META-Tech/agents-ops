@@ -8,7 +8,8 @@ import { OurExpertise } from "./components/our-expertise";
 import { OurTeam } from "./components/our-team";
 import { Testimonials } from "./components/testimonials";
 import { TechStack } from "./components/tech-stack";
-import { AgentsOpsLinear } from "./components/agentsops-linear";
+import { Contact } from "./components/contact";
+import { cn } from "@/lib/utils";
 
 const LandingPage = () => {
   return (
@@ -34,7 +35,21 @@ const LandingPage = () => {
       </div>
       <Testimonials />
       <TechStack />
-      <AgentsOpsLinear />
+      <div
+        id="contact"
+        className={cn(
+          "bg-[radial-gradient(100%_100%_at_50%_100.08%,_#001857_0%,_#001344_100%)]",
+          "min-h-[630px] px-20 py-24 max-[640px]:px-10 overflow-hidden relative"
+        )}
+      >
+        <div
+          className={cn(
+            "bg-[url(assets/images/circle-frame.png)] bg-no-repeat bg-[size:1150px_1150px]",
+            "h-[1150px] w-[1150px] absolute top-[23%] left-[50%] translate-x-[-50%] z-0"
+          )}
+        />
+        <Contact />
+      </div>
     </div>
   );
 };

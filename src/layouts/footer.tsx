@@ -1,4 +1,3 @@
-// import React from "react";
 import agentsOpsLogoWhite from "@/assets/images/agents-ops-logo-white.png";
 import locationIcon from "@/assets/svg/location-icon.svg";
 import phoneIcon from "@/assets/svg/phone-icon.svg";
@@ -18,7 +17,7 @@ export const FOOTER_LINKS = [
     elId: "our-strength",
   },
   {
-    label: "How it works",
+    label: "How It Works",
     elId: "how-it-work",
   },
   {
@@ -36,7 +35,12 @@ export const Footer = () => {
     <div className="bg-[#001344] py-16 px-6 text-white">
       <div className="max-w-[1280px] mx-auto min-w-[320px] flex justify-between max-[1140px]:flex-col">
         <div className="flex flex-col items-start justify-between">
-          <img className="mb-12" src={agentsOpsLogoWhite} alt="AgentOps" />
+          <div className="mb-12">
+            <img className="" src={agentsOpsLogoWhite} alt="AgentOps" />
+            <div className="text-base font-normal leading-[26px] text-[#7C89AE] pl-11">
+              A Varmeta company
+            </div>
+          </div>
 
           <div
             className={cn(
@@ -93,19 +97,20 @@ export const Footer = () => {
 
           <ul className="text-base leading-[26px] font-normal flex flex-col gap-3">
             {FOOTER_LINKS.map((link) => (
-              <li key={link.label} onClick={() => handleScroll(link.elId)} className="cursor-pointer">
+              <li
+                key={link.label}
+                onClick={() => handleScroll(link.elId)}
+                className="cursor-pointer"
+              >
                 {link.label}
               </li>
             ))}
           </ul>
 
-          <div className="flex items-center justify-between text-base leading-[26px] font-normal mt-[50px] max-[700px]:flex-col max-[700px]:items-start gap-2">
+          <div className="flex items-center justify-between text-base leading-[26px] font-normal mt-[50px] max-[920px]:flex-col max-[920px]:items-start gap-2">
             <div>©2025 Var-meta All Rights Serviced</div>
-
-            <div className="flex gap-4">
-              <div>Terms and Conditions</div>
-              <div>Privacy Policy</div>
-            </div>
+            <div>Terms and Conditions</div>
+            <div>Privacy Policy</div>
           </div>
         </div>
       </div>

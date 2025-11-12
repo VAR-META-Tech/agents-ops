@@ -31,7 +31,7 @@ export const WhatMakesUsStandout = () => {
                   <div className="text-2xl font-semibold mb-3 max-[980px]:text-xl">
                     {feature.title}
                   </div>
-                  <div className="text-xl font-normal leading-8 max-[980px]:text-lg">
+                  <div className="text-lg font-normal leading-8 max-[980px]:text-lg">
                     {feature.description}
                   </div>
                 </div>

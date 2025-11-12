@@ -13,7 +13,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
         <Header />
       </div>
       <div>{children}</div>
-      <div id="footer">
+      <div>
         <Footer />
       </div>
     </div>

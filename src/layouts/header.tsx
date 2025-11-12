@@ -25,7 +25,7 @@ export const NAV_LINKS = [
     elId: "our-strength",
   },
   {
-    label: "How it works",
+    label: "How It Works",
     elId: "how-it-work",
   },
   {
@@ -92,9 +92,9 @@ export const Header = () => {
         </DropdownMenu>
 
         <CommonButton
-          className="ml-5 min-w-32 h-11 text-sm pr-3 pl-4 gap-1 max-[930px]:ml-0 max-[930px]:h-9"
+          className="ml-5 min-w-32 h-11 text-sm pr-3 pl-4 gap-1 max-[930px]:ml-0 max-[930px]:h-9 max-[400px]:hidden"
           variant="outline"
-          onClick={() => handleScroll("footer")}
+          onClick={() => handleScroll("contact")}
         >
           <span>Contact us</span>
           <img

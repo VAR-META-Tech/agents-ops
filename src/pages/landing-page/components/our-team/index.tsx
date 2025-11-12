@@ -38,7 +38,7 @@ export const OurTeam = () => {
                   <div className="text-base font-normal leading-[26px] text-[#1E1E1EDB]">
                     {member.degree}
                   </div>
-                  <div className="text-xl font-normal leading-8 mt-5">
+                  <div className="text-lg font-normal leading-8 mt-5">
                     {member.bio}
                   </div>
                 </CardContent>

@@ -11,7 +11,7 @@ export const WORKFLOW_STEPS = [
     title: "Discovery",
     subtitle: "[ Workflow Assessment ]",
     description:
-      "Begin with a deep dive into your business needs. We assess current workflows, identify pain points, and map AI agent opportunities—e.g., automating 60-70% of repetitive tasks. This phase includes stakeholder interviews, data audits, and ROI projections to ensure alignment with enterprise goals.",
+      "We start with an in-depth analysis of your operations to identify automation opportunities and performance bottlenecks. Through stakeholder interviews, data audits, and ROI modeling, we define where AI agents can deliver the greatest impact.",
     icon: <img src={searchBookIcon} alt="Discovery" />,
   },
   {
@@ -19,7 +19,7 @@ export const WORKFLOW_STEPS = [
     title: "Design",
     subtitle: "[ Architecture Planning ]",
     description:
-      "Develop the agent’s blueprint, integrating multi-agent orchestration for collaborative systems (e.g., hierarchical agents where one plans and others carry out subtasks). We outline tools, APIs, and human-in-the-loop safeguards, developing best practices for reusable components to enhance efficiency by 20-40%.",
+      "We architect the solution, outlining the agent ecosystem, orchestration model, and integration points. This phase establishes best practices for governance, human oversight, and reusable components - ensuring long-term efficiency and scalability.",
     icon: <img src={codepenIcon} alt="Design" />,
   },
   {
@@ -27,7 +27,7 @@ export const WORKFLOW_STEPS = [
     title: "Development",
     subtitle: "[ Building Core Agents ]",
     description:
-      "Develop the agents using flexible frameworks that support both single and multi-agent configurations. Emphasize modular coding practices and ensure thorough testing for precision and edge cases. The agents should be capable of understanding and handling independently, while also incorporating feedback mechanisms.",
+      "Our engineers develop modular, enterprise-grade AI agents using flexible frameworks for both single and multi-agent systems. Each agent undergoes rigorous testing to ensure precision, adaptability, and seamless collaboration.",
     icon: <img src={terminalSquareIcon} alt="Development" />,
   },
   {
@@ -35,7 +35,7 @@ export const WORKFLOW_STEPS = [
     title: "Integration",
     subtitle: "[ Seamless Deployment ]",
     description:
-      "Connect agents to your existing systems (e.g., CRMs, APIs, or cloud platforms). We handle secure data flows and compatibility, mitigating risks like inaccuracies (noted by 52% of organizations in McKinsey surveys) through observability tools.",
+      "We deploy agents into your existing systems - connecting CRMs and data pipelines through secure APIs and containerized infrastructure. Observability tools maintain transparency, compatibility, and compliance throughout the process.",
     icon: <img src={dataIcon} alt="Integration" />,
   },
   {
@@ -43,7 +43,7 @@ export const WORKFLOW_STEPS = [
     title: "Optimization",
     subtitle: "[ Performance Tuning ]",
     description:
-      "Refine agents post-launch with real-world data, A/B testing, and iterations aiming for 95%+ user acceptance. Incorporate McKinsey-recommended metrics for productivity gains (e.g., 3.0x annual lift) and scalability evaluations.",
+      "After launch, we analyze real-world performance to fine-tune behaviors, improve adoption, and enhance productivity. Continuous A/B testing and feedback loops ensure measurable ROI and sustained operational gains.",
     icon: <img src={slidersWhiteIcon} alt="Optimization" />,
   },
   {
@@ -51,7 +51,7 @@ export const WORKFLOW_STEPS = [
     title: "Support",
     subtitle: "[ Governance & Maintenance ]",
     description:
-      "Provide ongoing monitoring, updates, and governance frameworks for compliance, bias mitigation, and long-term sustainability. This ensures agents evolve with your business, supporting hybrid human-AI teams and reducing cycle times by 30-50%.",
+      "We provide continuous monitoring, updates, and governance oversight to keep your AI agents performing at their peak. Our lifecycle management framework ensures compliance, resilience, and ongoing business alignment.",
     icon: <img src={cursorClickWhiteIcon} alt="Support" />,
   },
 ];
