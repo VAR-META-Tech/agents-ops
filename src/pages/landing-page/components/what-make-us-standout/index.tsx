@@ -11,7 +11,7 @@ export const WhatMakesUsStandout = () => {
         "bg-no-repeat bg-[length:100%_100%,1100px_1100px] bg-[position:calc(50%+500px)_0,calc(50%+750px)_112px]"
       )}
     >
-      <div className="max-w-[1280px] mx-auto px-16 py-28 text-white max-[676px]:px-8">
+      <div className="max-w-[1280px] mx-auto py-28 text-white max-[1415px]:px-8">
         <div className="mb-16 py-6">
           <CommonTitle className="max-[930px]:text-3xl">
             What Makes Us Standout
