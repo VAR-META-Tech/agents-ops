@@ -14,7 +14,7 @@ export const OurServices = () => {
           </CommonTitle>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(625px,_1fr))] gap-7 mt-10 max-[676px]:grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))]">
+        <div className="grid grid-cols-2 gap-7 mt-10 max-[870px]:grid-cols-1">
           {SERVICES.map((service, index) => (
             <CommonAnimationContainer
               key={service.no}
