@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 
 export const OurTeam = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-[1280px] mx-auto py-20 max-2xl:mx-6">
+    <div className="bg-white px-6">
+      <div className="max-w-[1280px] mx-auto py-20">
         <div className="mb-10 pl-6 max-md:pl-3">
           <CommonTitle className="max-lg:text-3xl">Our Team</CommonTitle>
         </div>

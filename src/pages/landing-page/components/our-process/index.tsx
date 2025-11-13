@@ -59,8 +59,8 @@ export const OurProcess = () => {
   }, [api]);
 
   return (
-    <div className="bg-white">
-      <div className="max-w-[1280px] mx-auto py-10 max-2xl:mx-6">
+    <div className="bg-white px-6">
+      <div className="max-w-[1280px] mx-auto py-10">
         <div className="mb-10 pl-6 flex items-center justify-between max-md:pl-3 max-md:min-w-[320px]">
           <CommonTitle className="max-lg:text-3xl">Our Process</CommonTitle>
 
@@ -119,7 +119,6 @@ export const OurProcess = () => {
                             {step.id}
                           </CommonChip>
                           <div className="h-16 flex flex-col justify-between">
-                            xx
                             <CardDescription className="text-lg font-normal text-white max-sm:text-lg">
                               {step.subtitle}
                             </CardDescription>

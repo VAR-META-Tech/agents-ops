@@ -10,7 +10,7 @@ export const OurExpertise = () => {
   const [activeTab, setActiveTab] = React.useState("expertise-1");
 
   return (
-    <div>
+    <div className="px-6">
       <div className="max-w-[1280px] mx-auto py-14">
         <div className="flex items-center justify-between px-6">
           <div className="pl-6 max-md:pl-3">
