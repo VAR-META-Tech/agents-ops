@@ -18,7 +18,7 @@ export const OurExpertise = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-[48px] border border-[#E6E6E6] mt-10 max-2xl:mx-6 max-xl:hidden">
+        <div className="bg-white rounded-[48px] border border-[#E6E6E6] mt-10 max-xl:hidden">
           <Tabs
             className="flex-row justify-between bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat"
             value={activeTab}
@@ -82,13 +82,13 @@ export const OurExpertise = () => {
           </Tabs>
         </div>
 
-        <div className="bg-white rounded-3xl border border-[#E6E6E6] mt-10 mx-6 hidden max-xl:block min-w-[320px]">
+        <div className="bg-white rounded-3xl border border-[#E6E6E6] mt-10 hidden max-xl:block min-w-[320px]">
           <Tabs
             className="flex justify-between bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat"
             value={activeTab}
             onValueChange={setActiveTab}
           >
-            <TabsList className="flex items-start bg-transparent p-10">
+            <TabsList className="flex items-start bg-transparent p-10 max-sm:px-6 max-[400px]:mx-auto">
               {TABS.map((tab, index) => (
                 <TabsTrigger
                   key={tab.value}
