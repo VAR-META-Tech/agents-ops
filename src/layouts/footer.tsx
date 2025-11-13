@@ -33,7 +33,7 @@ export const FOOTER_LINKS = [
 export const Footer = () => {
   return (
     <div className="bg-[#001344] py-16 px-6 text-white">
-      <div className="max-w-[1280px] mx-auto min-w-[320px] flex justify-between max-[1140px]:flex-col">
+      <div className="max-w-[1280px] mx-auto min-w-[320px] flex justify-between max-xl:flex-col">
         <div className="flex flex-col items-start justify-between">
           <div className="mb-12">
             <img className="" src={agentsOpsLogoWhite} alt="AgentOps" />
@@ -44,8 +44,8 @@ export const Footer = () => {
 
           <div
             className={cn(
-              "flex flex-col items-start gap-7 max-[1140px]:grid",
-              "max-[1140px]:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] max-[1140px]:w-full max-[1140px]:gap-10 max-[1140px]:mb-10"
+              "flex flex-col items-start gap-7 max-xl:grid",
+              "max-xl:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] max-xl:w-full max-xl:gap-10 max-xl:mb-10"
             )}
           >
             <div>
@@ -86,7 +86,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="max-w-[800px] w-full max-[1280px]:max-w-[700px]">
+        <div className="max-w-[800px] w-full max-xl:max-w-[700px]">
           <div className="text-[#7C89AE] font-semibold text-2xl mb-4">
             Ready to start your build?
           </div>
@@ -107,7 +107,7 @@ export const Footer = () => {
             ))}
           </ul>
 
-          <div className="flex items-center justify-between text-base leading-[26px] font-normal mt-[50px] max-[920px]:flex-col max-[920px]:items-start gap-2">
+          <div className="flex items-center justify-between text-base leading-[26px] font-normal mt-[50px] max-lg:flex-col max-lg:items-start gap-2">
             <div>©2025 Var-meta All Rights Serviced</div>
             <div>Terms and Conditions</div>
             <div>Privacy Policy</div>

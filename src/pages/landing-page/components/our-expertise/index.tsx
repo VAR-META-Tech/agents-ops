@@ -13,14 +13,12 @@ export const OurExpertise = () => {
     <div>
       <div className="max-w-[1280px] mx-auto py-14">
         <div className="flex items-center justify-between px-6">
-          <div className="pl-6 max-[676px]:pl-3">
-            <CommonTitle className="max-[930px]:text-3xl">
-              Our Expertise
-            </CommonTitle>
+          <div className="pl-6 max-md:pl-3">
+            <CommonTitle className="max-lg:text-3xl">Our Expertise</CommonTitle>
           </div>
         </div>
 
-        <div className="bg-white rounded-[48px] border border-[#E6E6E6] mt-10 max-[1400px]:mx-6 max-[1100px]:hidden">
+        <div className="bg-white rounded-[48px] border border-[#E6E6E6] mt-10 max-2xl:mx-6 max-xl:hidden">
           <Tabs
             className="flex-row justify-between bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat"
             value={activeTab}
@@ -33,17 +31,20 @@ export const OurExpertise = () => {
                   value={tab.value}
                   className={cn(
                     "text-xl font-normal w-[576px] pl-6 justify-start leading-8 data-[state=active]:font-semibold border-0 shadow-none! bg-transparent! gap-8 group",
-                    "data-[state=active]:bg-[url(assets/images/bg-polygon.png)] data-[state=active]:bg-no-repeat data-[state=active]:bg-cover",
-                    "max-[1280px]:w-[525px] max-[1280px]:gap-2 max-[1280px]:rounded-3xl"
+                    "data-[state=active]:bg-[url(assets/images/bg-polygon.png)] bg-no-repeat bg-[size:100%_100%]",
+                    "max-xl:w-[525px] max-xl:gap-2 max-xl:rounded-3xl"
                   )}
                 >
                   <CommonChip className="w-12 min-w-12 h-12 min-h-12 bg-white">
                     {index + 1}
                   </CommonChip>
                   <motion.div
-                    className="origin-left text-2xl max-[1400px]:text-xl"
+                    className={cn("origin-left text-lg max-2xl:text-xl", {
+                      "text-xl transition-all duration-200":
+                        tab.value === activeTab,
+                    })}
                     viewport={{ once: false }}
-                    animate={{ scale: tab.value === activeTab ? 1.05 : 1 }}
+                    // animate={{ scale: tab.value === activeTab ? 1.2 : 1 }}
                     transition={{ duration: 0.3 }}
                     initial={false}
                   >
@@ -68,10 +69,10 @@ export const OurExpertise = () => {
                     transition={{ duration: 0.5 }}
                     className="h-full"
                   >
-                    <div className="text-4xl font-semibold leading-12 mb-4 max-[1400px]:text-2xl">
+                    <div className="text-4xl font-semibold leading-12 mb-4 max-2xl:text-2xl">
                       {tab.title}
                     </div>
-                    <div className="text-lg font-normal leading-8 max-[1400px]:text-lg">
+                    <div className="text-lg font-normal leading-8 max-2xl:text-lg">
                       {tab.description}
                     </div>
                   </motion.div>
@@ -81,7 +82,7 @@ export const OurExpertise = () => {
           </Tabs>
         </div>
 
-        <div className="bg-white rounded-3xl border border-[#E6E6E6] mt-10 mx-6 hidden max-[1100px]:block min-w-[320px]">
+        <div className="bg-white rounded-3xl border border-[#E6E6E6] mt-10 mx-6 hidden max-xl:block min-w-[320px]">
           <Tabs
             className="flex justify-between bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat"
             value={activeTab}
@@ -99,7 +100,7 @@ export const OurExpertise = () => {
                   <CommonChip
                     className={cn(
                       "w-12 min-w-12 h-12 min-h-12 bg-white group-data-[state=active]:bg-[#1E1E1E] group-data-[state=active]:text-white",
-                      "transition-colors duration-300 max-[430px]:w-10 max-[430px]:h-10 max-[430px]:min-w-10 max-[430px]:min-h-10"
+                      "transition-colors duration-300 max-sm:w-10 max-sm:h-10 max-sm:min-w-10 max-sm:min-h-10"
                     )}
                   >
                     {index + 1}
@@ -113,7 +114,7 @@ export const OurExpertise = () => {
                 <TabsContent
                   key={tab.value}
                   value={tab.value}
-                  className="max-w-[576px] bg-white border border-[#E6E6E6] rounded-3xl h-full p-8 max-[1400px]:max-w-full"
+                  className="max-w-[576px] bg-white border border-[#E6E6E6] rounded-3xl h-full p-8 max-2xl:max-w-full"
                 >
                   <motion.div
                     key={tab.value}
@@ -123,10 +124,10 @@ export const OurExpertise = () => {
                     transition={{ duration: 0.5 }}
                     className="h-full"
                   >
-                    <div className="text-4xl font-semibold leading-12 mb-4 max-[1400px]:text-2xl">
+                    <div className="text-4xl font-semibold leading-12 mb-4 max-2xl:text-2xl">
                       {tab.title}
                     </div>
-                    <div className="text-xl font-normal leading-8 max-[1400px]:text-lg">
+                    <div className="text-xl font-normal leading-8 max-2xl:text-lg">
                       {tab.description}
                     </div>
                   </motion.div>

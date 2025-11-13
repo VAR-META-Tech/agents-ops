@@ -7,16 +7,16 @@ import { cn } from "@/lib/utils";
 export const OurTeam = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1280px] mx-auto py-20 max-[1400px]:mx-6">
-        <div className="mb-10 pl-6 max-[676px]:pl-3">
-          <CommonTitle className="max-[930px]:text-3xl">Our Team</CommonTitle>
+      <div className="max-w-[1280px] mx-auto py-20 max-2xl:mx-6">
+        <div className="mb-10 pl-6 max-md:pl-3">
+          <CommonTitle className="max-lg:text-3xl">Our Team</CommonTitle>
         </div>
 
         <div
           className={cn(
             "grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] min-w-[320px] gap-6 text-[#1E1E1E] p-8 bg-[#E6E6E6]",
             "bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat rounded-[48px] border border-[#E6E6E6]",
-            "max-[540px]:!grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]"
+            "max-sm:!grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]"
           )}
         >
           {TEAM_MEMBERS.map((member, index) => (
@@ -27,7 +27,7 @@ export const OurTeam = () => {
             >
               <Card
                 key={member.id}
-                className="rounded-4xl min-h-[500px] max-[1315px]:min-h-[538px] max-[615px]:min-h-[400px]"
+                className="rounded-4xl min-h-[500px] max-2xl:min-h-[538px] max-sm:min-h-[400px]"
               >
                 <CardHeader>{member.image}</CardHeader>
                 <CardContent>

@@ -8,17 +8,15 @@ import { cn } from "@/lib/utils";
 export const HowItWork = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-[1280px] mx-auto py-20 max-[1400px]:mx-6">
-        <div className="mb-10 pl-6 max-[676px]:pl-3">
-          <CommonTitle className="max-[930px]:text-3xl">
-            How It Works
-          </CommonTitle>
+      <div className="max-w-[1280px] mx-auto py-20 max-2xl:mx-6">
+        <div className="mb-10 pl-6 max-md:pl-3">
+          <CommonTitle className="max-lg:text-3xl">How It Works</CommonTitle>
         </div>
 
         <div
           className={cn(
             "gap-6 border border-[#E6E6E6] rounded-[48px] p-8 bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat",
-            "grid grid-cols-3 min-w-[320px] max-[1050px]:grid-cols-2 max-[745px]:grid-cols-1"
+            "grid grid-cols-3 min-w-[320px] max-lg:grid-cols-2 max-md:grid-cols-1"
           )}
         >
           {HOW_IT_WORKS.map((item, index) => (

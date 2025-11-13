@@ -11,9 +11,9 @@ export const WhatMakesUsStandout = () => {
         "bg-no-repeat bg-[length:100%_100%,1100px_1100px] bg-[position:calc(50%+500px)_0,calc(50%+750px)_112px]"
       )}
     >
-      <div className="max-w-[1280px] mx-auto py-28 text-white max-[1415px]:px-8">
+      <div className="max-w-[1280px] mx-auto py-28 text-white max-2xl:px-8">
         <div className="mb-16 py-6">
-          <CommonTitle className="max-[930px]:text-3xl">
+          <CommonTitle className="max-lg:text-3xl">
             What Makes Us Standout
           </CommonTitle>
         </div>
@@ -25,16 +25,13 @@ export const WhatMakesUsStandout = () => {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="h-full"
             >
-              <div
-                key={index}
-                className="flex items-start gap-6 max-[676px]:gap-3"
-              >
+              <div key={index} className="flex items-start gap-6 max-md:gap-3">
                 <div>{feature.icon}</div>
                 <div className="max-w-[524px]">
-                  <div className="text-2xl font-semibold mb-3 max-[980px]:text-xl">
+                  <div className="text-2xl font-semibold mb-3 max-lg:text-xl">
                     {feature.title}
                   </div>
-                  <div className="text-lg font-normal leading-8 max-[980px]:text-lg">
+                  <div className="text-lg font-normal leading-8 max-lg:text-lg">
                     {feature.description}
                   </div>
                 </div>

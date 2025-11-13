@@ -5,18 +5,16 @@ import { Separator } from "@/components/ui/separator";
 export const TechStack = () => {
   return (
     <div className="bg-white py-48 px-6 min-w-[320px]">
-      <div className="max-w-[1280px] mx-auto flex justify-between items-center max-[1250px]:flex-col">
-        <CommonTitle className="max-[980px]:text-3xl">
-          Our Techstack
-        </CommonTitle>
+      <div className="max-w-[1280px] mx-auto flex justify-between items-center max-xl:flex-col">
+        <CommonTitle className="max-lg:text-3xl">Our Techstack</CommonTitle>
 
         <Separator
-          className="!h-[216px] ml-12 max-[1250px]:hidden"
+          className="!h-[216px] ml-12 max-xl:hidden"
           orientation="vertical"
         />
 
         <Separator
-          className="hidden max-[1250px]:block my-12"
+          className="hidden max-xl:block my-12"
           orientation="horizontal"
         />
 
