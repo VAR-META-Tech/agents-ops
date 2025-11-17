@@ -27,7 +27,7 @@ export const OurTeam = () => {
             >
               <Card
                 key={member.id}
-                className="rounded-4xl min-h-[500px] max-2xl:min-h-[538px] max-sm:min-h-[400px]"
+                className="rounded-4xl min-h-[500px] h-full max-h-full max-2xl:min-h-[538px] max-sm:min-h-[400px]"
               >
                 <CardHeader>{member.image}</CardHeader>
                 <CardContent>

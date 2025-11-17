@@ -11,7 +11,7 @@ export const OurServices = () => {
       <div
         className={cn(
           "bg-[url(assets/images/ellipse-linear.png)] bg-[size:1000px_1000px] w-full h-full bg-no-repeat",
-          "absolute top-[-400px] left-[50%] translate-x-[calc(-80%)] w-[1000px] h-[1000px]"
+          "absolute top-[-400px] left-[50%] translate-x-[calc(-950px)] w-[1000px] h-[1000px]"
         )}
       />
 

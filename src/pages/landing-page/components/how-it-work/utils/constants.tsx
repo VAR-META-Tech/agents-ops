@@ -8,7 +8,7 @@ export const HOW_IT_WORKS = [
     title: "User Prompt Ingestion",
     image: (
       <img
-        className="w-full h-[280px] object-cover rounded-2xl"
+        className="w-full h-[280px] object-cover rounded-2xl max-lg:h-[350px]"
         src={usePrompt}
         alt="User Prompt"
       />
@@ -19,7 +19,7 @@ export const HOW_IT_WORKS = [
     title: "Agents Collaboration & Execution",
     image: (
       <img
-        className="w-full h-[280px] object-cover rounded-2xl"
+        className="w-full h-[280px] object-cover rounded-2xl max-lg:h-[350px]"
         src={agentsProcess}
         alt="Agent Process"
       />
@@ -30,7 +30,7 @@ export const HOW_IT_WORKS = [
     title: "Output Delivery",
     image: (
       <img
-        className="w-full h-[280px] object-cover rounded-2xl"
+        className="w-full h-[280px] object-cover rounded-2xl max-lg:h-[350px]"
         src={output}
         alt="Output"
       />

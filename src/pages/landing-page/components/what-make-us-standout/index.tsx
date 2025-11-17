@@ -20,7 +20,7 @@ export const WhatMakesUsStandout = () => {
             "[transform:rotate(250deg)] h-[1000px] w-[1000px] top-[10%] left-[calc(50%+180px)] absolute"
           )}
         />
-        <div className="max-w-[1280px] mx-auto py-28 text-white max-2xl:px-8 z-10 relative">
+        <div className="max-w-[1280px] mx-auto py-14 text-white max-2xl:px-8 z-10 relative">
           <div className="mb-16 py-6">
             <CommonTitle className="max-lg:text-3xl text-[#1E1E1E]">
               What Makes Us Standout

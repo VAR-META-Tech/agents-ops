@@ -15,7 +15,7 @@ export const TESTIMONIALS = [
     quote:
       "Varmeta helped us scale our engineering efforts in building the Aptos CaV Unreal SDK. The team built a robust solution that not only leverages proper language styling but is performant and efficient. The success of this collaboration has motivated us to explore continued collaboration with the Varmeta team.",
     title: "David, Head of Engineering – Aptos",
-    logo: <img src={aptosLogo} alt="Aptos" />,
+    logo: <img className="w-[100px]" src={aptosLogo} alt="Aptos" />,
   },
   {
     id: 3,

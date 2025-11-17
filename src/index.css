@@ -99,8 +99,15 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+html {
+  /* font-size: clamp(14px, 1rem, 16px);  */
+  /* font-size: min(1rem, 16px) !important; */
+  font-size: 16px;
+}
+
 body {
   margin: 0;
+  font-size: 1rem; /* 16px by default */
 }
 
 @theme inline {

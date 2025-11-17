@@ -113,7 +113,7 @@ export const OurProcess = () => {
                     className="h-full"
                   >
                     <div className="p-1">
-                      <Card className="h-[530px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-sm:w-[280px] max-sm:h-[550px]">
+                      <Card className="min-h-[460px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-sm:w-[280px] max-sm:h-[570px]">
                         <CardHeader className="flex items-start gap-4">
                           <CommonChip className="w-[68px] h-[68px] min-w-[68px] min-h-[68px] bg-transparent text-white max-sm:min-w-10 max-sm:w-10 max-sm:min-h-10 max-sm:h-10">
                             {step.id}
@@ -128,11 +128,11 @@ export const OurProcess = () => {
                           </div>
                         </CardHeader>
 
-                        <CardContent className="flex pt-6">
-                          <span className="text-lg font-normal leading-8">
+                        <CardContent className="flex flex-col pt-6">
+                          <span className="text-lg font-normal leading-8 min-h-[250px]">
                             {step.description}
                           </span>
-                          <span className="absolute bottom-8 right-8 max-sm:hidden">
+                          <span className="flex justify-end max-sm:hidden">
                             {step.icon}
                           </span>
                         </CardContent>

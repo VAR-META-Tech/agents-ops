@@ -49,29 +49,30 @@ export const Testimonials = () => {
         opts={{ loop: true, active: true }}
         setApi={setApi}
       >
-        <CarouselContent className="w-full mb-6 px-2">
+        <div className="text-2xl font-semibold leading-9 text-[#1E1E1EAD] text-center mb-8">
+          Testimonials
+        </div>
+
+        <CarouselContent className="w-full mb-6 px-2 max-sm:m-0">
           {TESTIMONIALS.map((testimonial, index) => (
-            <CarouselItem key={index}>
-              <div className="max-w-[800px] mx-auto">
-                <div className="text-2xl font-semibold leading-9 text-[#1E1E1EAD] text-center mb-8">
-                  Testimonials
-                </div>
-                <CommonAnimationContainer className="text-2xl font-semibold leading-8 text-center">
+            <CarouselItem key={index} className="">
+              <div className="max-w-[800px] mx-auto max-sm:w-full max-sm:px-2">
+                <div className="text-2xl font-semibold leading-8 text-center">
                   {testimonial.quote}
-                </CommonAnimationContainer>
-                <CommonAnimationContainer className="text-lg font-normal leading-8 text-center mt-5">
+                </div>
+                <div className="text-lg font-normal leading-8 text-center mt-5">
                   <div>{testimonial.title}</div>
                   <div className="flex justify-center items-center mt-5">
                     {" "}
                     {testimonial.logo}
                   </div>
-                </CommonAnimationContainer>
+                </div>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
 
-        <CommonAnimationContainer className="flex gap-3 justify-center items-center">
+        <CommonAnimationContainer className="flex gap-3 justify-center items-center mt-4">
           {TESTIMONIALS.map((_, index) => (
             <div
               key={index}
