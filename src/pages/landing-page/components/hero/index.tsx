@@ -9,7 +9,7 @@ import heroEffects from "@/assets/lotties/hero-effects.json";
 
 export const Hero = () => {
   return (
-    <div className=" bg-[url(assets/images/linear.png)] bg-no-repeat bg-cover overflow-hidden">
+    <div className="bg-[url(assets/images/linear.png)] bg-no-repeat bg-[size:100%_100%] bg-[position:50%_200px] overflow-hidden">
       <div className="pt-20 min-w-[320px] relative">
         <div
           className={cn(

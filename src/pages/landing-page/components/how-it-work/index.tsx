@@ -15,8 +15,8 @@ export const HowItWork = () => {
 
         <div
           className={cn(
-            "gap-6 border border-[#E6E6E6] rounded-[48px] p-8 bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat",
-            "grid grid-cols-3 min-w-[320px] max-lg:grid-cols-2 max-md:grid-cols-1"
+            "gap-4 border border-[#E6E6E6] rounded-[48px] p-8 bg-[url(assets/images/net-background.png)] bg-cover bg-no-repeat",
+            "grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:p-5"
           )}
         >
           {HOW_IT_WORKS.map((item, index) => (
@@ -25,15 +25,15 @@ export const HowItWork = () => {
               transition={{ duration: 0.4, delay: index * 0.2 }}
               className="h-full"
             >
-              <Card className="gap-2 rounded-4xl">
-                <CardHeader>{item.image}</CardHeader>
-                <CardContent>
+              <Card className="gap-2 rounded-4xl !p-4">
+                <CardHeader className="!p-0">{item.image}</CardHeader>
+                <CardContent className="!p-1">
                   <CardTitle>
-                    <div className="flex items-center gap-2">
-                      <CommonChip className="w-12 h-12 min-w-12 min-h-12 bg-white">
+                    <div className="flex items-center gap-2 my-2 max-sm:gap-3">
+                      <CommonChip className="w-7 h-7 min-w-7 min-h-7 bg-white text-base">
                         <span>{item.id}</span>
                       </CommonChip>
-                      <span className="text-2xl font-semibold">
+                      <span className="text-lg font-normal truncate">
                         {item.title}
                       </span>
                     </div>

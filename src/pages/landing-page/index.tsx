@@ -39,7 +39,7 @@ const LandingPage = () => {
         id="contact"
         className={cn(
           "bg-[radial-gradient(100%_100%_at_50%_100.08%,_#001857_0%,_#001344_100%)]",
-          "min-h-[630px] px-20 py-24 max-[640px]:px-10 overflow-hidden relative"
+          "min-h-[630px] px-20 py-24 overflow-hidden relative max-sm:px-6"
         )}
       >
         <div

@@ -3,11 +3,19 @@ import { SERVICES } from "./utils/constants";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { CommonChip } from "@/components/common/common-chip";
 import CommonAnimationContainer from "@/components/common/common-animation-container";
+import { cn } from "@/lib/utils";
 
 export const OurServices = () => {
   return (
-    <div className="py-14 px-6 bg-[url(assets/images/ellipse-linear.png)] bg-no-repeat bg-cover bg-[position:-300px_-450px]">
-      <div className="max-w-[1280px] mx-auto">
+    <div className="py-14 px-6 relative">
+      <div
+        className={cn(
+          "bg-[url(assets/images/ellipse-linear.png)] bg-[size:1000px_1000px] w-full h-full bg-no-repeat",
+          "absolute top-[-400px] left-[50%] translate-x-[calc(-80%)] w-[1000px] h-[1000px]"
+        )}
+      />
+
+      <div className="max-w-[1280px] mx-auto z-10 relative">
         <div className="flex items-center justify-between">
           <CommonTitle className="pl-6 max-lg:text-3xl max-md:pl-3">
             Our Services

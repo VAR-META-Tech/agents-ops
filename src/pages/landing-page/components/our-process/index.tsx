@@ -105,7 +105,7 @@ export const OurProcess = () => {
               {WORKFLOW_STEPS.map((step, index) => (
                 <CarouselItem
                   key={index}
-                  className="max-w-[515px] max-sm:!max-w-[320px]"
+                  className="max-w-[515px] max-sm:!max-w-[300px]"
                 >
                   <CommonAnimationContainer
                     key={index}
@@ -113,7 +113,7 @@ export const OurProcess = () => {
                     className="h-full"
                   >
                     <div className="p-1">
-                      <Card className="h-[530px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-sm:w-[300px] max-sm:h-[550px] max-[385px]:!w-[280px]">
+                      <Card className="h-[530px] w-[500px] relative bg-[#1E1E1E] text-white rounded-4xl max-sm:w-[280px] max-sm:h-[550px]">
                         <CardHeader className="flex items-start gap-4">
                           <CommonChip className="w-[68px] h-[68px] min-w-[68px] min-h-[68px] bg-transparent text-white max-sm:min-w-10 max-sm:w-10 max-sm:min-h-10 max-sm:h-10">
                             {step.id}

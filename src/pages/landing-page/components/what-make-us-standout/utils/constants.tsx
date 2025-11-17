@@ -1,49 +1,49 @@
-import zapFastIcon from "@/assets/svg/zap-fast-icon.svg";
-import futureProofIcon from "@/assets/svg/future-proof-icon.svg";
-import cursorClickWhiteIcon from "@/assets/svg/cursor-click-white-icon.svg";
-import buildingIcon from "@/assets/svg/building-icon.svg";
+import zapFastIcon from "@/assets/svg/zap-fast-black.svg";
+import uploadIcon from "@/assets/svg/upload-black.svg";
+import cursorClickIcon from "@/assets/svg/cursor-click-black.svg";
+import buildingIcon from "@/assets/svg/building-black.svg";
 
 export const FEATURES = [
   {
-    title: "High-density Talents",
+    title: "Speed",
     description:
-      "Led by two PhDs and one MS in AI and NLP, our team brings deep research expertise and hands-on engineering excellence - ensuring every solution is both scientifically rigorous and commercially effective.",
+      "We use natural language instructions to set up new workflows in minutes, not months.",
     icon: (
       <img
         className="w-16 h-16 min-w-16 min-h-16"
-        src={cursorClickWhiteIcon}
+        src={zapFastIcon}
         alt="Zap Fast"
       />
     ),
   },
   {
-    title: "Speed",
+    title: "High-density Talents",
     description:
-      "From concept to deployment in weeks, not months. Our streamlined, natural language–driven approach accelerates implementation and shortens time-to-value.",
+      "Using our proprietary model, we provide more accurate and reliable workflows than competitors.",
     icon: (
       <img
         className="w-16 h-16 min-w-16 min-h-16"
-        src={zapFastIcon}
-        alt="Future Proof"
+        src={cursorClickIcon}
+        alt="Cursor Click"
       />
     ),
   },
   {
     title: "Flexibility",
     description:
-      "Built to adapt. Our modular architecture integrates with any environment - on-premise, cloud, or hybrid - scaling seamlessly as your needs evolve.",
+      "Our workflows are resilient to changes in your environment, and require no maintenance or upkeep.",
     icon: (
       <img
         className="w-16 h-16 min-w-16 min-h-16"
-        src={futureProofIcon}
-        alt="Cursor Click White"
+        src={uploadIcon}
+        alt="Upload"
       />
     ),
   },
   {
     title: "Enterprise-grade Quality",
     description:
-      "Designed for reliability, security, and compliance. Every AI agent meets enterprise benchmarks for performance, governance, and trust.",
+      "Unlock value across your organization—empowering every department, from HR to Operations.",
     icon: (
       <img
         className="w-16 h-16 min-w-16 min-h-16"
